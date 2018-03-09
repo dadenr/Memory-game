@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+</head>
+<body>
+    <div class="cabecera">
+        <button id="start" onclick="baraja(); startGame();">Start</button>
+        <div id="reloj"></div>
+    </div>
+    <div id="game"></div>
+    <div id="winner"><img src="img/Pokemon/logo.png" alt=pokemon> Winner!</div>
+    <div id="game-over">GAME OVER</div>
+    <audio id="song" src="./audio/song.mp3"></audio>
+    <audio id="clic" src="./audio/clic.mp3"></audio>
+    <audio id="bounce" src="./audio/bounce.mp3"></audio>
+    <audio id="win" src="./audio/winner.mp3"></audio>
+    <audio id="fail" src="./audio/fail.mp3"></audio>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
