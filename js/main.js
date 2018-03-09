@@ -160,13 +160,14 @@ function baraja(){
     });
 
     gameover.style.opacity = "0";
-    winner.classList.remove("open"); // quitamos el "WINNER" 
-    rejilla.classList.remove("out");  // le quitamos la clase out a rejilla para que baje    
-    rejilla.classList.add("start");  // le añadimos la clase start a rejilla para que baje
-    start.style.display = "none";      // apaga el botón
-    reloj.style.display = "initial";  // encendemos el reloj
+    winner.classList.remove("open"); // quitamos "WINNER" 
+    rejilla.classList.remove("out");  // quitamos la 1clase out a rejilla para que baje    
+    rejilla.classList.add("start");  // añadimos la clase start a rejilla para que baje
+    start.style.display = "none";      // apagar el botón
+    reloj.style.display = "initial";  // encender reloj
     song.play();  // audio
     eliminados = 0;
+    reloj.classList.remove("intermitente");    /* reloj intermitente */
 }
 
 
@@ -193,7 +194,11 @@ function startGame(){
         gameOver();
     }
     segundos--;
-    }
+    
+    if (segundos < 10) {   /* reloj intermitente */
+        reloj.classList.add("intermitente"); 
+    };
+}
 
 
 
@@ -254,13 +259,13 @@ rejilla.addEventListener("click", function(evento){
         if(primerSel === segundoSel){
             bounce.currentTime = 0;
             bounce.play();
-            setTimeout (eliminar, 300);
+            setTimeout (eliminar, 500);
                 // eliminar(); //tuneamos esta en 120 y 107
-            setTimeout (resetSel, 300);
+            setTimeout (resetSel, 500);
             contEliminados();
                 // resetSel();
         } else {
-            setTimeout (resetSel, 500);
+            setTimeout (resetSel, 600);
         // selPrevio = null; //en Versión fácil on
                 // resetSel();
              }  // tenemos que ponerle un retraso antes de que lo reset 
