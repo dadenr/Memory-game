@@ -260,7 +260,7 @@ rejilla.addEventListener("click", function(evento){
             contEliminados();
                 // resetSel();
         } else {
-            setTimeout (resetSel, 1100);
+            setTimeout (resetSel, 500);
         // selPrevio = null; //en Versión fácil on
                 // resetSel();
              }  // tenemos que ponerle un retraso antes de que lo reset 
