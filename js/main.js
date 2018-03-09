@@ -195,7 +195,7 @@ function startGame(){
     }
     segundos--;
     
-    if (segundos < 10) {   /* reloj intermitente */
+    if (segundos < 15) {   /* reloj intermitente */
         reloj.classList.add("intermitente"); 
     };
 }

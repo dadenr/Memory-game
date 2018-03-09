@@ -1,5 +1,18 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 
+
+@keyframes intermitente {  /* reloj intermitente */
+    0% { opacity: 0;}
+    50% { opacity: 1; color: red;}
+    100% { opacity: 0;}
+}
+.intermitente {  /* probando reloj intermitente */
+    animation-name: intermitente;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite; 
+}
+
+
 body{
     /* background-color: rgba(226, 168, 43, 0.378); */
     background-image: url("../img/Pokemon/Fondo-pokemon.png");
