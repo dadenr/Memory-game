@@ -20,13 +20,6 @@ body{
     background-repeat: no-repeat; background-size: cover;
 }
 
-.platos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center
-}
-
 #reloj {
     color: yellow;
     font-size: 40px;
